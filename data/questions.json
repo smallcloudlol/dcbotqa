@@ -1,0 +1,182 @@
+[
+  {
+    "id": "py-001",
+    "category": "Python",
+    "difficulty": "easy",
+    "question": "Python 中用哪個關鍵字定義函式？",
+    "options": ["def", "function", "func", "lambda"],
+    "answer": 0,
+    "explanation": "一般函式使用 def 定義；lambda 只能建立單一運算式的匿名函式。"
+  },
+  {
+    "id": "py-002",
+    "category": "Python",
+    "difficulty": "easy",
+    "question": "print(7 // 2) 的輸出是？",
+    "options": ["3.5", "3", "4", "3.0"],
+    "answer": 1,
+    "explanation": "// 是整數除法（向下取整），7 // 2 = 3。"
+  },
+  {
+    "id": "py-003",
+    "category": "Python",
+    "difficulty": "medium",
+    "question": "len([1, 2, [3, 4]]) 的結果是？",
+    "options": ["2", "3", "4", "發生錯誤"],
+    "answer": 1,
+    "explanation": "內層的 [3, 4] 算作一個元素，所以長度是 3。"
+  },
+  {
+    "id": "py-004",
+    "category": "Python",
+    "difficulty": "medium",
+    "question": "下列哪一種是 Python 的不可變（immutable）型別？",
+    "options": ["list", "dict", "tuple", "set"],
+    "answer": 2,
+    "explanation": "tuple 建立後內容不能修改；list、dict、set 都可以新增或刪除元素。"
+  },
+  {
+    "id": "py-005",
+    "category": "Python",
+    "difficulty": "medium",
+    "question": "\"abc\"[::-1] 的結果是？",
+    "options": ["\"abc\"", "\"cba\"", "\"a\"", "發生錯誤"],
+    "answer": 1,
+    "explanation": "切片的步長為 -1 時會由後往前取，因此得到反轉後的字串。"
+  },
+  {
+    "id": "py-006",
+    "category": "Python",
+    "difficulty": "hard",
+    "question": "呼叫一個用 async def 定義的函式（未 await）時，會得到什麼？",
+    "options": ["函式的回傳值", "None", "協程（coroutine）物件", "立即拋出例外"],
+    "answer": 2,
+    "explanation": "async 函式被呼叫時不會馬上執行，而是回傳協程物件，需要 await 或交給事件迴圈才會執行。"
+  },
+  {
+    "id": "it-001",
+    "category": "資訊常識",
+    "difficulty": "easy",
+    "question": "HTTP 狀態碼 404 代表什麼？",
+    "options": ["伺服器內部錯誤", "找不到資源", "權限不足", "請求成功"],
+    "answer": 1,
+    "explanation": "404 Not Found 表示伺服器找不到請求的資源；500 是伺服器錯誤、403 是禁止存取、200 是成功。"
+  },
+  {
+    "id": "it-002",
+    "category": "資訊常識",
+    "difficulty": "easy",
+    "question": "二進位的 1010 等於十進位的多少？",
+    "options": ["8", "10", "12", "1010"],
+    "answer": 1,
+    "explanation": "1×8 + 0×4 + 1×2 + 0×1 = 10。"
+  },
+  {
+    "id": "it-003",
+    "category": "資訊常識",
+    "difficulty": "easy",
+    "question": "SQL 中用來查詢資料的指令是？",
+    "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+    "answer": 2,
+    "explanation": "SELECT 用來查詢；INSERT 新增、UPDATE 修改、DELETE 刪除。"
+  },
+  {
+    "id": "it-004",
+    "category": "資訊常識",
+    "difficulty": "medium",
+    "question": "HTTPS 預設使用的連接埠是？",
+    "options": ["21", "80", "443", "8080"],
+    "answer": 2,
+    "explanation": "HTTPS 預設為 443 埠，HTTP 為 80 埠，FTP 為 21 埠。"
+  },
+  {
+    "id": "it-005",
+    "category": "資訊常識",
+    "difficulty": "medium",
+    "question": "下列哪一個屬於關聯式資料庫？",
+    "options": ["SQLite", "Redis", "MongoDB", "Elasticsearch"],
+    "answer": 0,
+    "explanation": "SQLite 是關聯式資料庫；Redis 是鍵值資料庫、MongoDB 是文件資料庫、Elasticsearch 是搜尋引擎。本 Bot 就是用 SQLite 儲存成績。"
+  },
+  {
+    "id": "it-006",
+    "category": "資訊常識",
+    "difficulty": "easy",
+    "question": "1 KiB 等於多少位元組（byte）？",
+    "options": ["1000", "1024", "512", "2048"],
+    "answer": 1,
+    "explanation": "KiB 是二進位單位，1 KiB = 2¹⁰ = 1024 bytes；KB 在 SI 標準中則為 1000 bytes。"
+  },
+  {
+    "id": "dc-001",
+    "category": "Discord",
+    "difficulty": "medium",
+    "question": "Bot 若要讀取一般訊息的文字內容，需要在開發者後台開啟哪個 Privileged Intent？",
+    "options": ["Presence Intent", "Server Members Intent", "Message Content Intent", "不需要開啟任何 Intent"],
+    "answer": 2,
+    "explanation": "讀取訊息內容需要 Message Content Intent。本 Bot 只用斜線指令和按鈕，所以不需要開啟。"
+  },
+  {
+    "id": "dc-002",
+    "category": "Discord",
+    "difficulty": "medium",
+    "question": "Discord 訊息中的一列（Action Row）最多可以放幾個按鈕？",
+    "options": ["3", "5", "10", "25"],
+    "answer": 1,
+    "explanation": "每個 Action Row 最多 5 個按鈕，因此本 Bot 的題目最多支援 5 個選項。"
+  },
+  {
+    "id": "dc-003",
+    "category": "Discord",
+    "difficulty": "hard",
+    "question": "一個 Discord Embed 最多可以有幾個欄位（field）？",
+    "options": ["10", "20", "25", "50"],
+    "answer": 2,
+    "explanation": "Embed 最多 25 個 field。"
+  },
+  {
+    "id": "dc-004",
+    "category": "Discord",
+    "difficulty": "hard",
+    "question": "Bot 回應斜線指令時，只有指令使用者看得到的訊息稱為？",
+    "options": ["Ephemeral 訊息", "Pinned 訊息", "System 訊息", "Webhook 訊息"],
+    "answer": 0,
+    "explanation": "Ephemeral（暫時性）訊息只有觸發互動的使用者看得到，本 Bot 用它來顯示私人提示。"
+  },
+  {
+    "id": "gk-001",
+    "category": "一般常識",
+    "difficulty": "easy",
+    "question": "地球上面積最大的海洋是？",
+    "options": ["大西洋", "印度洋", "太平洋", "北冰洋"],
+    "answer": 2,
+    "explanation": "太平洋面積約 1.6 億平方公里，是最大的海洋。"
+  },
+  {
+    "id": "gk-002",
+    "category": "一般常識",
+    "difficulty": "easy",
+    "question": "臺灣最高的山是？",
+    "options": ["雪山", "玉山", "合歡山", "阿里山"],
+    "answer": 1,
+    "explanation": "玉山主峰海拔約 3952 公尺，是臺灣最高峰。"
+  },
+  {
+    "id": "gk-003",
+    "category": "一般常識",
+    "difficulty": "medium",
+    "question": "光在真空中的速度大約是每秒多少公里？",
+    "options": ["3 萬公里", "30 萬公里", "300 萬公里", "340 公里"],
+    "answer": 1,
+    "explanation": "光速約為每秒 30 萬公里（299,792 公里）；每秒約 340 公尺是空氣中的音速。"
+  },
+  {
+    "id": "gk-004",
+    "category": "一般常識",
+    "difficulty": "medium",
+    "question": "下列哪一個是太陽系中最大的行星？",
+    "options": ["土星", "木星", "海王星", "地球"],
+    "answer": 1,
+    "explanation": "木星是太陽系最大的行星，質量約為其他行星總和的 2.5 倍。"
+  }
+]
